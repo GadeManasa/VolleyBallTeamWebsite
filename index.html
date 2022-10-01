@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SLU - Volleyball Teams</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="team.html">Our Team</a>
+        <a href="about.html">About</a>
+        <a style="float: right;" href="#">Signup</a>
+        <a style="float: right;" href="#">Login</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsive()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="container">
+            <h1><u>Saint Louis University Volley Ball Team</u></h1>
+            <img src="./Images/volleyball.jpg" class="teamImg" alt="vollyball team" />
+            <p>Saint Louis University — located in St. Louis, Missouri, with a campus in Madrid, Spain, is one of the nation’s oldest and most prestigious Catholic universities. Founded in 1818, SLU is recognized for world-class academics, life-changing research, compassionate health care, and a strong commitment to faith and service.</p>
+            <p>SLU's Jesuit tradition demands excellence in research and teaching, and our renowned faculty have embraced an
+            unrelenting focus on academic quality. Jesuit schools are known for high academic standards, and we uphold
+            this reputation with pride.
+            We don't so much embrace ideas as challenge them, ensuring our students are better prepared to make a
+            difference in an increasingly complex and demanding world.</p> 
+
+            <h2>Colleges and Schools</h2>
+            <ul class="schoolsList">
+            <li>College of Arts and Sciences</li>
+            <li>College of Philosophy and Letters</li>
+            <li>College for Public Health and Social Justice</li>
+            <li>Doisy College of Health Sciences</li>
+            <li>Richard A. Chaifetz School of Business</li>
+            <li>School of Education</li>
+            <li>School of Law</li>
+            <li>School of Medicine</li>
+            <li>School for Professional Studies</li>
+            <li>School of Social Work</li>
+            <li>School of Science and Engineering</li>
+            </ul> 
+
+        <!-- Image Gallery  -->
+        <div class="image-container">
+            <div class="slide">
+                <div class="slideNumber">1</div>
+                <img src="./Images/1.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <div class="slideNumber">2</div>
+                <img src="./Images/2.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <div class="slideNumber">3</div>
+                <img src="./Images/3.jpg" alt="" />
+            </div>
+    
+            <!-- Next and Previous icon to change images -->
+            <a class="previous" onclick="moveSlides(-1)">
+                <i class="fa fa-chevron-circle-left"></i>
+            </a>
+            <a class="next" onclick="moveSlides(1)">
+                <i class="fa fa-chevron-circle-right"></i>
+            </a>
+        </div>
+        <br>
+    
+        <div style="text-align:center">
+            <span class="footerdot" onclick="activeSlide(1)">
+            </span>
+            <span class="footerdot" onclick="activeSlide(2)">
+            </span>
+            <span class="footerdot" onclick="activeSlide(3)">
+            </span>
+        </div>
+
+        <!-- News Section -->
+        <div class="newsBox">
+            <h1><u>News Section</u></h1>
+            <div class="box">
+                <h1>50 years ago, scientists dug into Pangaea's past lives</h1>
+                <img src="./Images/7.jpg" class="boxImg" />
+                <p><b>Details: </b>The continents as we know them resulted when the proto­continent Pangaea broke apart
+                    and its fragments made the long slow journey to their present positions. The process took about 200
+                    m­illion years. But the Earth’s crust is an estimated 4.5 billion years old.… [Scientists are
+                    exploring] the perplexing p­roblem of what went on during the billions of years before Pangaea went
+                    to pieces.</p>
+            </div>
+            <div class="box">
+                <h1>European satellite duo will study oceans and warming</h1>
+                <img src="./Images/8.jpg" class="boxImg" />
+                <p><b>Details: </b>The European Space Agency (ESA) last week approved the $420 million Harmony mission
+                    as the next in its Earth Explorer line of science missions, following a competition. Harmony’s two
+                    satellites will carry infrared sensors and radar receivers to observe the turbulent waves, winds,
+                    and eddies that govern the interchange of heat and gases between the oceans and atmosphere.</p>
+            </div>
+            <div class="box">
+                <h1>New tools for chemistry education and outreach for these</h1>
+                <img src="./Images/5.jpg" class="boxImg" />
+                <p><b>Details: </b>Over seven years ago I was listening to an episode of the fabulous science podcast
+                    RadioLab that stopped me in my tracks. For RadioLab fans, this might not seem so surprising given
+                    the show's knack for sharing science by combining storytelling with opulent sound design… but this
+                    time it was different.</p>
+            </div>
+            <div class="box">
+                <h1>The credibility of science is damaged when universities brag about themselves</h1>
+                <img src="./Images/6.jpg" class="boxImg" />
+                <p><b>Details: </b>About 25 years ago, it was predicted that attention would come to dominate the
+                    marketplace. The prediction was correct. Science is not immune to the "attention economy." In fact,
+                    it plays an active role in it. However, the things that are seen as being of value to individual
+                    scientists or institutions, like media attention, are undermining public trust and devaluing science
+                    as a collective resource.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        This work is licensed under a<br><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0; height: 40px; width: 70px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

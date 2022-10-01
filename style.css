@@ -1,0 +1,275 @@
+/* home page, navbar & footer */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #a92261;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #a92261;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* media queries for navbar */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.container {
+    text-align: justify;
+    margin: 2% 8% 0 8%;
+}
+
+.container h1 { font-size: 35px }
+
+.container h2 { font-size: 30px }
+
+.container p { font-size: 18px }
+
+.schoolsList { font-size: 18px }
+
+.footer {
+    padding: 8px 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    /* position: static;
+    bottom: 0; */
+}
+
+.box {
+    float: left;
+    width: 45%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.boxImg {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 780px) {
+    .box {
+        width: 100%;
+    }
+}
+
+/* image gallery  */
+
+img {
+    width: 100%;
+}
+
+.height {
+    height: 10px;
+}
+
+/* Image-container design */
+.image-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.next {
+    right: 0;
+}
+
+/* Next and previous icon design */
+.previous,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    margin-top: -25px;
+}
+
+/* caption decorate */
+.captionText {
+    color: #000000;
+    font-size: 14px;
+    position: absolute;
+    padding: 12px 12px;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Slider image number */
+.slideNumber {
+    background-color: #5574C5;
+    color: white;
+    border-radius: 25px;
+    right: 0;
+    opacity: .5;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    position: absolute;
+}
+
+.fa {
+    font-size: 32px;
+}
+
+.fa:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+    color: white;
+}
+
+.footerdot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+
+.active,
+.footerdot:hover {
+    background-color: black;
+}
+
+/* news page */
+.news {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 2%;
+    padding: 1%;
+}
+
+.newsText {
+    margin: 5% 0 0 20%;
+}
+
+.newsImg {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* media querries for news page */
+@media screen and (max-width: 1000px) {
+    .newsText {
+        margin: 3%;
+    }
+    
+    .newsImg {
+        float: none;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+/* contact page */
+.inputGroup { 
+    width: 100%;
+}
+
+.inputGroup label {
+    margin-left: 12px;
+} 
+
+input {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 5px;
+}
+
+.btn {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #a92261;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin: 1%;
+}
+
+/* our team page */
+.team {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.teamImg {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
